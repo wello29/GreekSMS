@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F00C2FA2BC6362F0085D556 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F00C2F92BC6362F0085D556 /* NewMessageView.swift */; };
+		8F00C2FC2BC637800085D556 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F00C2FB2BC637800085D556 /* SettingsView.swift */; };
+		8F00C2FE2BC63A6E0085D556 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F00C2FD2BC63A6E0085D556 /* ContactsView.swift */; };
+		8F1376B42BE5889C006AB579 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8F1376B32BE5889C006AB579 /* Alamofire */; };
+		8F1376B62BE5889C006AB579 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8F1376B52BE5889C006AB579 /* AlamofireDynamic */; };
+		8F1376B82BE5A598006AB579 /* SendSMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1376B72BE5A598006AB579 /* SendSMS.swift */; };
+		8F3D13872BEC8BBF009CCE80 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3D13862BEC8BBF009CCE80 /* TileView.swift */; };
+		8F3D13892BEC8C71009CCE80 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3D13882BEC8C71009CCE80 /* HomeViewModel.swift */; };
+		8F3D138B2BEC8F57009CCE80 /* CustomizeHomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3D138A2BEC8F57009CCE80 /* CustomizeHomeScreenView.swift */; };
+		8F8618B12BE6D54100C3F8E2 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8618B02BE6D54100C3F8E2 /* ContactsViewModel.swift */; };
+		8F8618B32BE6F55B00C3F8E2 /* ContactCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8618B22BE6F55B00C3F8E2 /* ContactCardView.swift */; };
+		8F8618B52BE6F57A00C3F8E2 /* FolderSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8618B42BE6F57A00C3F8E2 /* FolderSelectionView.swift */; };
+		8F8618B72BE89FD800C3F8E2 /* ContactGroupSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8618B62BE89FD800C3F8E2 /* ContactGroupSelectorView.swift */; };
+		8FD8201D2BC24C05001BB1FD /* greeksmsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8201C2BC24C05001BB1FD /* greeksmsApp.swift */; };
+		8FD8201F2BC24C05001BB1FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8201E2BC24C05001BB1FD /* ContentView.swift */; };
+		8FD820212BC24C06001BB1FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD820202BC24C06001BB1FD /* Assets.xcassets */; };
+		8FD820242BC24C06001BB1FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD820232BC24C06001BB1FD /* Preview Assets.xcassets */; };
+		8FD8202E2BC24C06001BB1FD /* greeksmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8202D2BC24C06001BB1FD /* greeksmsTests.swift */; };
+		8FD820382BC24C06001BB1FD /* greeksmsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820372BC24C06001BB1FD /* greeksmsUITests.swift */; };
+		8FD8203A2BC24C06001BB1FD /* greeksmsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820392BC24C06001BB1FD /* greeksmsUITestsLaunchTests.swift */; };
+		8FD820472BC24C4C001BB1FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD820462BC24C4C001BB1FD /* GoogleService-Info.plist */; };
+		8FD820482BC24C4C001BB1FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD820462BC24C4C001BB1FD /* GoogleService-Info.plist */; };
+		8FD820492BC24C4C001BB1FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD820462BC24C4C001BB1FD /* GoogleService-Info.plist */; };
+		8FD8204C2BC2509A001BB1FD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD8204B2BC2509A001BB1FD /* FirebaseAnalytics */; };
+		8FD8204E2BC2509A001BB1FD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD8204D2BC2509A001BB1FD /* FirebaseAuth */; };
+		8FD820502BC2509A001BB1FD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD8204F2BC2509A001BB1FD /* FirebaseDatabase */; };
+		8FD820522BC2509A001BB1FD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD820512BC2509A001BB1FD /* FirebaseFirestore */; };
+		8FD820542BC2509A001BB1FD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD820532BC2509A001BB1FD /* FirebaseStorage */; };
+		8FD820562BC36E1C001BB1FD /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820552BC36E1C001BB1FD /* AuthenticationViewModel.swift */; };
+		8FD820572BC36E1C001BB1FD /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820552BC36E1C001BB1FD /* AuthenticationViewModel.swift */; };
+		8FD820582BC36E1C001BB1FD /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820552BC36E1C001BB1FD /* AuthenticationViewModel.swift */; };
+		8FD8205A2BC36F1A001BB1FD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820592BC36F1A001BB1FD /* SignInView.swift */; };
+		8FD8205B2BC36F1A001BB1FD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820592BC36F1A001BB1FD /* SignInView.swift */; };
+		8FD8205C2BC36F1A001BB1FD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820592BC36F1A001BB1FD /* SignInView.swift */; };
+		8FD820622BC37CA3001BB1FD /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820612BC37CA3001BB1FD /* HomePage.swift */; };
+		8FD820632BC37CA3001BB1FD /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820612BC37CA3001BB1FD /* HomePage.swift */; };
+		8FD820642BC37CA3001BB1FD /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820612BC37CA3001BB1FD /* HomePage.swift */; };
+		8FD820662BC3959D001BB1FD /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820652BC3959D001BB1FD /* user.swift */; };
+		8FD820672BC3959D001BB1FD /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820652BC3959D001BB1FD /* user.swift */; };
+		8FD820682BC3959D001BB1FD /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD820652BC3959D001BB1FD /* user.swift */; };
+		8FD8CF772BE4A0DB0097BD97 /* MessageLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8CF762BE4A0DB0097BD97 /* MessageLogView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FD8202A2BC24C06001BB1FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD820112BC24C05001BB1FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD820182BC24C05001BB1FD;
+			remoteInfo = greeksms;
+		};
+		8FD820342BC24C06001BB1FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD820112BC24C05001BB1FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD820182BC24C05001BB1FD;
+			remoteInfo = greeksms;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F00C2F92BC6362F0085D556 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		8F00C2FB2BC637800085D556 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8F00C2FD2BC63A6E0085D556 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		8F1376B72BE5A598006AB579 /* SendSMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSMS.swift; sourceTree = "<group>"; };
+		8F3D13862BEC8BBF009CCE80 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		8F3D13882BEC8C71009CCE80 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8F3D138A2BEC8F57009CCE80 /* CustomizeHomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeHomeScreenView.swift; sourceTree = "<group>"; };
+		8F8618B02BE6D54100C3F8E2 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		8F8618B22BE6F55B00C3F8E2 /* ContactCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCardView.swift; sourceTree = "<group>"; };
+		8F8618B42BE6F57A00C3F8E2 /* FolderSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderSelectionView.swift; sourceTree = "<group>"; };
+		8F8618B62BE89FD800C3F8E2 /* ContactGroupSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactGroupSelectorView.swift; sourceTree = "<group>"; };
+		8FD820192BC24C05001BB1FD /* greeksms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = greeksms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD8201C2BC24C05001BB1FD /* greeksmsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greeksmsApp.swift; sourceTree = "<group>"; };
+		8FD8201E2BC24C05001BB1FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8FD820202BC24C06001BB1FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FD820232BC24C06001BB1FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8FD820292BC24C06001BB1FD /* greeksmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = greeksmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD8202D2BC24C06001BB1FD /* greeksmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greeksmsTests.swift; sourceTree = "<group>"; };
+		8FD820332BC24C06001BB1FD /* greeksmsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = greeksmsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD820372BC24C06001BB1FD /* greeksmsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greeksmsUITests.swift; sourceTree = "<group>"; };
+		8FD820392BC24C06001BB1FD /* greeksmsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greeksmsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8FD820462BC24C4C001BB1FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8FD820552BC36E1C001BB1FD /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		8FD820592BC36F1A001BB1FD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		8FD820612BC37CA3001BB1FD /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		8FD820652BC3959D001BB1FD /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		8FD8CF762BE4A0DB0097BD97 /* MessageLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLogView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FD820162BC24C05001BB1FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD820502BC2509A001BB1FD /* FirebaseDatabase in Frameworks */,
+				8FD820522BC2509A001BB1FD /* FirebaseFirestore in Frameworks */,
+				8FD8204C2BC2509A001BB1FD /* FirebaseAnalytics in Frameworks */,
+				8F1376B42BE5889C006AB579 /* Alamofire in Frameworks */,
+				8F1376B62BE5889C006AB579 /* AlamofireDynamic in Frameworks */,
+				8FD820542BC2509A001BB1FD /* FirebaseStorage in Frameworks */,
+				8FD8204E2BC2509A001BB1FD /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD820262BC24C06001BB1FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD820302BC24C06001BB1FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FD820102BC24C05001BB1FD = {
+			isa = PBXGroup;
+			children = (
+				8FD8201B2BC24C05001BB1FD /* greeksms */,
+				8FD8202C2BC24C06001BB1FD /* greeksmsTests */,
+				8FD820362BC24C06001BB1FD /* greeksmsUITests */,
+				8FD8201A2BC24C05001BB1FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FD8201A2BC24C05001BB1FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FD820192BC24C05001BB1FD /* greeksms.app */,
+				8FD820292BC24C06001BB1FD /* greeksmsTests.xctest */,
+				8FD820332BC24C06001BB1FD /* greeksmsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FD8201B2BC24C05001BB1FD /* greeksms */ = {
+			isa = PBXGroup;
+			children = (
+				8FD8201C2BC24C05001BB1FD /* greeksmsApp.swift */,
+				8F8618B02BE6D54100C3F8E2 /* ContactsViewModel.swift */,
+				8F8618B42BE6F57A00C3F8E2 /* FolderSelectionView.swift */,
+				8F8618B22BE6F55B00C3F8E2 /* ContactCardView.swift */,
+				8F3D138A2BEC8F57009CCE80 /* CustomizeHomeScreenView.swift */,
+				8F3D13882BEC8C71009CCE80 /* HomeViewModel.swift */,
+				8F8618B62BE89FD800C3F8E2 /* ContactGroupSelectorView.swift */,
+				8FD8CF762BE4A0DB0097BD97 /* MessageLogView.swift */,
+				8FD820652BC3959D001BB1FD /* user.swift */,
+				8FD8201E2BC24C05001BB1FD /* ContentView.swift */,
+				8F3D13862BEC8BBF009CCE80 /* TileView.swift */,
+				8F00C2F92BC6362F0085D556 /* NewMessageView.swift */,
+				8F00C2FB2BC637800085D556 /* SettingsView.swift */,
+				8F00C2FD2BC63A6E0085D556 /* ContactsView.swift */,
+				8FD820592BC36F1A001BB1FD /* SignInView.swift */,
+				8FD820612BC37CA3001BB1FD /* HomePage.swift */,
+				8FD820552BC36E1C001BB1FD /* AuthenticationViewModel.swift */,
+				8F1376B72BE5A598006AB579 /* SendSMS.swift */,
+				8FD820462BC24C4C001BB1FD /* GoogleService-Info.plist */,
+				8FD820202BC24C06001BB1FD /* Assets.xcassets */,
+				8FD820222BC24C06001BB1FD /* Preview Content */,
+			);
+			path = greeksms;
+			sourceTree = "<group>";
+		};
+		8FD820222BC24C06001BB1FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8FD820232BC24C06001BB1FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8FD8202C2BC24C06001BB1FD /* greeksmsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FD8202D2BC24C06001BB1FD /* greeksmsTests.swift */,
+			);
+			path = greeksmsTests;
+			sourceTree = "<group>";
+		};
+		8FD820362BC24C06001BB1FD /* greeksmsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FD820372BC24C06001BB1FD /* greeksmsUITests.swift */,
+				8FD820392BC24C06001BB1FD /* greeksmsUITestsLaunchTests.swift */,
+			);
+			path = greeksmsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FD820182BC24C05001BB1FD /* greeksms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD8203D2BC24C06001BB1FD /* Build configuration list for PBXNativeTarget "greeksms" */;
+			buildPhases = (
+				8FD820152BC24C05001BB1FD /* Sources */,
+				8FD820162BC24C05001BB1FD /* Frameworks */,
+				8FD820172BC24C05001BB1FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = greeksms;
+			packageProductDependencies = (
+				8FD8204B2BC2509A001BB1FD /* FirebaseAnalytics */,
+				8FD8204D2BC2509A001BB1FD /* FirebaseAuth */,
+				8FD8204F2BC2509A001BB1FD /* FirebaseDatabase */,
+				8FD820512BC2509A001BB1FD /* FirebaseFirestore */,
+				8FD820532BC2509A001BB1FD /* FirebaseStorage */,
+				8F1376B32BE5889C006AB579 /* Alamofire */,
+				8F1376B52BE5889C006AB579 /* AlamofireDynamic */,
+			);
+			productName = greeksms;
+			productReference = 8FD820192BC24C05001BB1FD /* greeksms.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FD820282BC24C06001BB1FD /* greeksmsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD820402BC24C06001BB1FD /* Build configuration list for PBXNativeTarget "greeksmsTests" */;
+			buildPhases = (
+				8FD820252BC24C06001BB1FD /* Sources */,
+				8FD820262BC24C06001BB1FD /* Frameworks */,
+				8FD820272BC24C06001BB1FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FD8202B2BC24C06001BB1FD /* PBXTargetDependency */,
+			);
+			name = greeksmsTests;
+			productName = greeksmsTests;
+			productReference = 8FD820292BC24C06001BB1FD /* greeksmsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FD820322BC24C06001BB1FD /* greeksmsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD820432BC24C06001BB1FD /* Build configuration list for PBXNativeTarget "greeksmsUITests" */;
+			buildPhases = (
+				8FD8202F2BC24C06001BB1FD /* Sources */,
+				8FD820302BC24C06001BB1FD /* Frameworks */,
+				8FD820312BC24C06001BB1FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FD820352BC24C06001BB1FD /* PBXTargetDependency */,
+			);
+			name = greeksmsUITests;
+			productName = greeksmsUITests;
+			productReference = 8FD820332BC24C06001BB1FD /* greeksmsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FD820112BC24C05001BB1FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					8FD820182BC24C05001BB1FD = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					8FD820282BC24C06001BB1FD = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 8FD820182BC24C05001BB1FD;
+					};
+					8FD820322BC24C06001BB1FD = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 8FD820182BC24C05001BB1FD;
+					};
+				};
+			};
+			buildConfigurationList = 8FD820142BC24C05001BB1FD /* Build configuration list for PBXProject "greeksms" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FD820102BC24C05001BB1FD;
+			packageReferences = (
+				8FD8204A2BC2509A001BB1FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8F1376B22BE5889C006AB579 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 8FD8201A2BC24C05001BB1FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FD820182BC24C05001BB1FD /* greeksms */,
+				8FD820282BC24C06001BB1FD /* greeksmsTests */,
+				8FD820322BC24C06001BB1FD /* greeksmsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FD820172BC24C05001BB1FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD820242BC24C06001BB1FD /* Preview Assets.xcassets in Resources */,
+				8FD820212BC24C06001BB1FD /* Assets.xcassets in Resources */,
+				8FD820472BC24C4C001BB1FD /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD820272BC24C06001BB1FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD820482BC24C4C001BB1FD /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD820312BC24C06001BB1FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD820492BC24C4C001BB1FD /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FD820152BC24C05001BB1FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3D13892BEC8C71009CCE80 /* HomeViewModel.swift in Sources */,
+				8FD820622BC37CA3001BB1FD /* HomePage.swift in Sources */,
+				8F8618B12BE6D54100C3F8E2 /* ContactsViewModel.swift in Sources */,
+				8F3D13872BEC8BBF009CCE80 /* TileView.swift in Sources */,
+				8F00C2FC2BC637800085D556 /* SettingsView.swift in Sources */,
+				8F3D138B2BEC8F57009CCE80 /* CustomizeHomeScreenView.swift in Sources */,
+				8F8618B52BE6F57A00C3F8E2 /* FolderSelectionView.swift in Sources */,
+				8F8618B32BE6F55B00C3F8E2 /* ContactCardView.swift in Sources */,
+				8FD820562BC36E1C001BB1FD /* AuthenticationViewModel.swift in Sources */,
+				8F00C2FA2BC6362F0085D556 /* NewMessageView.swift in Sources */,
+				8FD820662BC3959D001BB1FD /* user.swift in Sources */,
+				8FD8CF772BE4A0DB0097BD97 /* MessageLogView.swift in Sources */,
+				8FD8201F2BC24C05001BB1FD /* ContentView.swift in Sources */,
+				8F00C2FE2BC63A6E0085D556 /* ContactsView.swift in Sources */,
+				8FD8205A2BC36F1A001BB1FD /* SignInView.swift in Sources */,
+				8F8618B72BE89FD800C3F8E2 /* ContactGroupSelectorView.swift in Sources */,
+				8FD8201D2BC24C05001BB1FD /* greeksmsApp.swift in Sources */,
+				8F1376B82BE5A598006AB579 /* SendSMS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD820252BC24C06001BB1FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD820672BC3959D001BB1FD /* user.swift in Sources */,
+				8FD8205B2BC36F1A001BB1FD /* SignInView.swift in Sources */,
+				8FD820572BC36E1C001BB1FD /* AuthenticationViewModel.swift in Sources */,
+				8FD8202E2BC24C06001BB1FD /* greeksmsTests.swift in Sources */,
+				8FD820632BC37CA3001BB1FD /* HomePage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD8202F2BC24C06001BB1FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD820642BC37CA3001BB1FD /* HomePage.swift in Sources */,
+				8FD820582BC36E1C001BB1FD /* AuthenticationViewModel.swift in Sources */,
+				8FD820682BC3959D001BB1FD /* user.swift in Sources */,
+				8FD8203A2BC24C06001BB1FD /* greeksmsUITestsLaunchTests.swift in Sources */,
+				8FD8205C2BC36F1A001BB1FD /* SignInView.swift in Sources */,
+				8FD820382BC24C06001BB1FD /* greeksmsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FD8202B2BC24C06001BB1FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD820182BC24C05001BB1FD /* greeksms */;
+			targetProxy = 8FD8202A2BC24C06001BB1FD /* PBXContainerItemProxy */;
+		};
+		8FD820352BC24C06001BB1FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD820182BC24C05001BB1FD /* greeksms */;
+			targetProxy = 8FD820342BC24C06001BB1FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8FD8203B2BC24C06001BB1FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FD8203C2BC24C06001BB1FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FD8203E2BC24C06001BB1FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"greeksms/Preview Content\"";
+				DEVELOPMENT_TEAM = BL38L922HF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chapman.greeksms;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FD8203F2BC24C06001BB1FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"greeksms/Preview Content\"";
+				DEVELOPMENT_TEAM = BL38L922HF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chapman.greeksms;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8FD820412BC24C06001BB1FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BL38L922HF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chapman.greeksmsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/greeksms.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/greeksms";
+			};
+			name = Debug;
+		};
+		8FD820422BC24C06001BB1FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BL38L922HF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chapman.greeksmsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/greeksms.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/greeksms";
+			};
+			name = Release;
+		};
+		8FD820442BC24C06001BB1FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BL38L922HF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chapman.greeksmsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = greeksms;
+			};
+			name = Debug;
+		};
+		8FD820452BC24C06001BB1FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BL38L922HF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chapman.greeksmsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = greeksms;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FD820142BC24C05001BB1FD /* Build configuration list for PBXProject "greeksms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD8203B2BC24C06001BB1FD /* Debug */,
+				8FD8203C2BC24C06001BB1FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FD8203D2BC24C06001BB1FD /* Build configuration list for PBXNativeTarget "greeksms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD8203E2BC24C06001BB1FD /* Debug */,
+				8FD8203F2BC24C06001BB1FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FD820402BC24C06001BB1FD /* Build configuration list for PBXNativeTarget "greeksmsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD820412BC24C06001BB1FD /* Debug */,
+				8FD820422BC24C06001BB1FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FD820432BC24C06001BB1FD /* Build configuration list for PBXNativeTarget "greeksmsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD820442BC24C06001BB1FD /* Debug */,
+				8FD820452BC24C06001BB1FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F1376B22BE5889C006AB579 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		8FD8204A2BC2509A001BB1FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F1376B32BE5889C006AB579 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F1376B22BE5889C006AB579 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8F1376B52BE5889C006AB579 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F1376B22BE5889C006AB579 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		8FD8204B2BC2509A001BB1FD /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD8204A2BC2509A001BB1FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8FD8204D2BC2509A001BB1FD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD8204A2BC2509A001BB1FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8FD8204F2BC2509A001BB1FD /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD8204A2BC2509A001BB1FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8FD820512BC2509A001BB1FD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD8204A2BC2509A001BB1FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8FD820532BC2509A001BB1FD /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD8204A2BC2509A001BB1FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8FD820112BC24C05001BB1FD /* Project object */;
+}
