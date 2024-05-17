@@ -11,9 +11,8 @@ This IOS application seeks to provide an enhanced way for fraternities and soror
 
 Please allow ample time for the application to open and load as it must download some package dependencies. It will download these on their own but just takes time. 
 
-Codefile Overview:
+Codefiles Overview:
 
-Code Components:
 
 greeksmsApp.swift: Main app entry point, setting up the app's initial view and managing the app delegate.
 
